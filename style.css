@@ -17,6 +17,9 @@ body{
     margin: 0 auto;
     text-align: center;
 }
+.score{
+    margin: 0 5px;
+}
 .h1_1{
     color: #F8485E;
     font-family: 'Neucha', cursive;
@@ -93,7 +96,7 @@ body{
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 40px;
+    padding: 0 50px;
     height: 50px;
 }
 .opt-flex div{
