@@ -1,0 +1,138 @@
+body{
+    background-color: #5089C6;
+}
+.outer{
+    border: 5px solid #001E6C;
+    background-color: white;
+    padding: 3px;
+    border-radius: 17px;
+    margin: 0 auto;
+    width: 75%;
+}
+.container{
+    background-color: white;
+    border: 7px solid #035397;
+    border-radius: 10px;
+    padding: 20px 30px 50px 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.h1_1{
+    color: #F8485E;
+    font-family: 'Neucha', cursive;
+    font-size: 50px;
+    font-weight: 900;
+}
+.time-div{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f8485e;
+}
+ 
+.btn_in{
+    background-color: #F8485E;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    border: 0px;
+    margin: 5px;
+    padding: 10px 10px 8px;
+    border-radius: 5px;
+}
+.text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #f8485e;
+}
+.num{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #035397;
+}
+#time{
+    background-color: #F8485E;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    border: 0px;
+    margin: 5px;
+    padding: 10px 0px 8px 5px;
+    border-radius: 5px;
+}
+
+.btn_in:hover{
+    background-color: #00c1d4;
+}
+.ptag{
+    color: #00C1D4;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0 0 50px;
+}
+.cont-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.queAndOpt{
+    margin: 40px 0 0 0;
+    border: 2px solid #035397;
+    border-radius: 10px;
+}
+.que-flex{
+    /* border: 1px solid black; */
+    display: flex;
+    margin: 80px 20px 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+.opt-flex{
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    height: 50px;
+}
+.opt-flex div{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 50%;
+    transition: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@media only screen and (max-width: 700px) {
+    .outer{
+        width: 90%;
+    }
+    .opt-flex div{
+        width: 60px;
+        height: 60px;
+    }
+    .que-flex{
+        margin: 10px;
+        padding:  0 40px 0;
+    }
+    .queAndOpt{
+        margin: 10px 0 0 0;
+    }
+}
+.opt-flex div:hover{
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#idque1, #idque2{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.msg{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin: 100px 0 40px;
+}

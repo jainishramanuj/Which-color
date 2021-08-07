@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhichColor?</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400&family=Montserrat&family=Nunito:ital,wght@1,900&family=Quicksand:wght@400&family=Varela+Round&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Neucha&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="outer">
+    <div class="container">
+        <div id="heading">
+            <h1 class="h1_1">Which Color ?</h1>
+        </div>
+        <div class="cont-flex">
+            <div class="time-div">
+                <form action="">
+                    <span>Time : </span>
+                    <select name="time" id="time" onchange="getValueOfTime(this)">
+                        <option value="none" selected="selected" disabled="disabled" hidden="hidden">- select -</option>
+                        <option value="15">15 Sec.</option>
+                        <option value="30">30 sec.</option>
+                        <option value="60">1 min.</option>
+                        <option value="120">2 min.</option>
+                    </select>
+                </form>
+            </div>
+            <div class="score" id="score">
+                <!-- <span>Score : 0</span> -->
+            </div>
+            <div class="count" id="count">
+                <!-- <span>30 sec left.</span> -->
+            </div>
+            <div class="btn">
+                <button class="btn_in" onclick="start()">Start</button>
+                <button class="btn_in" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="queAndOpt">
+            <div class="que-flex" id="que">
+                <!-- que part from js will connect here-->
+            </div>
+            <div class="opt-flex" id="opt">
+                <!-- options frome js is connect here -->
+            </div>
+            <div class="msg" id="idmsg">
+                <span id="idmsgspan"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- js file -->
+    <script src="script.js"></script>
+</body>
+</html>
